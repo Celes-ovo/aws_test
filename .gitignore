@@ -1,0 +1,8 @@
+simple/*/__pycache__
+simple/*/__init__.py
+simple/*/db.sqlite3
+simple/*/migrations
+
+# 
+simple/*/asgi.py
+simple/*/settings.py
