@@ -1,4 +1,4 @@
-from base import *
+from .base import *
 
 # EC2 초반 테스트를 위해 True로 설정
 DEBUG = True
