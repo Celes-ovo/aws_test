@@ -36,8 +36,11 @@ Django의 render 함수와 JsonResponse는 목적이 서로 다르기 때문에 
 """
 class TestView(generics.GenericAPIView):
     def get(self, request):
-        my_model = MyModel()
-        context = my_model.get_dict()
+      my_model = MyModel()
+      context = my_model.get_dict()
 
-        # 받은 context를 템플릿에 전달하여 렌더링
-        return render(request=request, template_name='dict_model/test.html', context=context)
+      # 디버깅용 출력
+      print("context:", context)
+
+      # 받은 context를 템플릿에 전달하여 렌더링
+      return render(request=request, template_name='dict_model/test.html', context=context)
