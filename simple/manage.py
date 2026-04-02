@@ -3,8 +3,15 @@
 import os
 import sys
 
+# TODO celes 260402 : dotenv
+from dotenv import load_dotenv
 
 def main():
+
+    # TODO celes 260402 : dotenv
+    load_dotenv()
+
+
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'simple.settings')
     try:

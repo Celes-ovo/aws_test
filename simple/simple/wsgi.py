@@ -11,6 +11,8 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'simple.settings')
+# TODO celes 260402 : EC2의 경우 settings.production.py를 사용하도록 설정
+# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'simple.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'simple.settings.production')
 
 application = get_wsgi_application()
