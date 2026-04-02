@@ -5,7 +5,8 @@ DEBUG = True
 
 # EC2의 public ip
 ALLOWED_HOSTS = [
-    '44.203.17.126',
+    # '44.203.17.126',
+    'ec2-44-203-17-126.compute-1.amazonaws.com',
 ]
 
 STATIC_URL = 'static/'
